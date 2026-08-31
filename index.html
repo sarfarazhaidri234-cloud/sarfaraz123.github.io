@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>سیدہ عائشہ صدیقہ رضی اللہ عنہا آن لائن قرآن اکیڈمی</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f7f3e8;
+    color:#173b2b;
+    line-height:1.9;
+}
+
+/* NAVBAR */
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#063b28;
+    padding:14px 10px;
+    text-align:center;
+    border-bottom:3px solid #d5aa45;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 7px;
+    font-size:15px;
+}
+
+/* HERO */
+
+.hero{
+    background:linear-gradient(135deg,#063b28,#13724e);
+    color:white;
+    text-align:center;
+    padding:65px 20px;
+    border-bottom:6px solid #d5aa45;
+}
+
+.hero h1{
+    font-size:32px;
+    margin-bottom:8px;
+}
+
+.hero h2{
+    font-size:23px;
+    font-weight:normal;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:18px;
+}
+
+.gold-btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:13px 28px;
+    background:#d5aa45;
+    color:#123522;
+    text-decoration:none;
+    border-radius:35px;
+    font-weight:bold;
+}
+
+/* GENERAL */
+
+.container{
+    width:92%;
+    max-width:1050px;
+    margin:auto;
+}
+
+section{
+    padding:45px 0;
+}
+
+.title{
+    text-align:center;
+    color:#075438;
+    font-size:29px;
+    margin-bottom:28px;
+}
+
+/* ABOUT */
+
+.about{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    font-size:18px;
+}
+
+/* COURSES */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px 18px;
+    text-align:center;
+    border-radius:20px;
+    border:1px solid #d5aa45;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.icon{
+    font-size:45px;
+}
+
+.card h3{
+    color:#075438;
+    font-size:22px;
+    margin:8px 0;
+}
+
+/* FEATURES */
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+}
+
+.feature{
+    background:#e7f1eb;
+    padding:20px;
+    border-radius:16px;
+    text-align:center;
+    font-size:18px;
+}
+
+/* TIMING */
+
+.timings{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.time{
+    display:flex;
+    justify-content:space-between;
+    padding:13px;
+    border-bottom:1px solid #ddd;
+    font-size:17px;
+}
+
+/* FORM */
+
+.form-box{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+input,select,textarea{
+    width:100%;
+    padding:13px;
+    margin:8px 0 15px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    font-size:16px;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:30px;
+    background:#063b28;
+    color:white;
+    font-size:18px;
+}
+
+/* CONTACT */
+
+.contact{
+    background:linear-gradient(135deg,#063b28,#13724e);
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+    border-radius:25px;
+}
+
+.contact h2{
+    font-size:30px;
+}
+
+.number{
+    font-size:25px;
+    margin:15px 0;
+    direction:ltr;
+}
+
+.whatsapp{
+    display:inline-block;
+    background:#25D366;
+    color:white;
+    padding:14px 30px;
+    border-radius:35px;
+    text-decoration:none;
+    font-size:19px;
+    font-weight:bold;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top:45px;
+    background:#052d20;
+    color:white;
+    text-align:center;
+    padding:28px 15px;
+    border-top:4px solid #d5aa45;
+}
+
+@media(max-width:600px){
+
+    .hero h1{
+        font-size:27px;
+    }
+
+    .hero h2{
+        font-size:20px;
+    }
+
+    nav a{
+        font-size:13px;
+        margin:0 4px;
+    }
+
+    .title{
+        font-size:25px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<!-- MENU -->
+
+<nav>
+
+<a href="#home">ہوم</a>
+
+<a href="#courses">کورسز</a>
+
+<a href="#about">تعارف</a>
+
+<a href="#timing">اوقات</a>
+
+<a href="#admission">داخلہ</a>
+
+<a href="#contact">رابطہ</a>
+
+</nav>
+
+
+<!-- HERO -->
+
+<header class="hero" id="home">
+
+<h1>
+سیدہ عائشہ صدیقہ رضی اللہ عنہا
+</h1>
+
+<h2>
+آن لائن قرآن اکیڈمی
+</h2>
+
+<p>
+📖 قرآن سیکھیں، دین سمجھیں، زندگی سنواریں
+</p>
+
+<a class="gold-btn" href="#admission">
+ابھی داخلہ لیں
+</a>
+
+</header>
+
+
+<div class="container">
+
+
+<!-- WELCOME -->
+
+<section>
+
+<h2 class="title">
+🌙 خوش آمدید
+</h2>
+
+<div class="about">
+
+<p>
+<strong>بسم اللہ الرحمن الرحیم</strong>
+</p>
+
+<p>
+قرآنِ کریم ناظرہ، تجوید، حفظ اور بنیادی دینی تعلیم
+گھر بیٹھے آسان اور مناسب انداز میں حاصل کریں۔
+</p>
+
+</div>
+
+</section>
+
+
+<!-- COURSES -->
+
+<section id="courses">
+
+<h2 class="title">
+📖 ہمارے کورسز
+</h2>
+
+<div class="cards">
+
+
+<div class="card">
+
+<div class="icon">📖</div>
+
+<h3>
+ناظرہ قرآنِ کریم
+</h3>
+
+<p>
+حروف کی پہچان سے مکمل قرآنِ کریم درست انداز میں پڑھنے کی تعلیم۔
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🕌</div>
+
+<h3>
+تجوید القرآن
+</h3>
+
+<p>
+مخارج اور تجوید کے ضروری قواعد آسان انداز میں سیکھیں۔
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">📚</div>
+
+<h3>
+حفظِ قرآن
+</h3>
+
+<p>
+حفظِ قرآن کے لیے سبق، سبقی اور منزل کا باقاعدہ نظام۔
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🤲</div>
+
+<h3>
+نماز اور دعائیں
+</h3>
+
+<p>
+نماز کا درست طریقہ اور روزمرہ کی ضروری دعائیں سیکھیں۔
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">📘</div>
+
+<h3>
+بنیادی دینی تعلیم
+</h3>
+
+<p>
+اسلام کے بنیادی عقائد، عبادات اور ضروری دینی تعلیم۔
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2 class="title">
+👨‍🏫 ہمارے بارے میں
+</h2>
+
+<div class="about">
+
+<h2>
+مولانا محمد سرفراز حیدری
+</h2>
+
+<p>
+ہماری کوشش ہے کہ طلبہ قرآنِ کریم کو صحیح تلفظ،
+تجوید اور مناسب انداز کے ساتھ سیکھیں اور اپنی زندگی
+کو قرآن کی تعلیمات کے مطابق بہتر بنائیں۔
+</p>
+
+</div>
+
+</section>
+
+
+<!-- FEATURES -->
+
+<section>
+
+<h2 class="title">
+✨ ہماری خصوصیات
+</h2>
+
+<div class="features">
+
+<div class="feature">
+✅ آسان اندازِ تدریس
+</div>
+
+<div class="feature">
+✅ آن لائن کلاسز
+</div>
+
+<div class="feature">
+✅ انفرادی توجہ
+</div>
+
+<div class="feature">
+✅ بچوں اور بڑوں کے لیے
+</div>
+
+<div class="feature">
+✅ مناسب اوقات
+</div>
+
+<div class="feature">
+✅ گھر بیٹھے قرآن سیکھیں
+</div>
+
+</div>
+
+</section>
+
+
+<!-- TIMING -->
+
+<section id="timing">
+
+<h2 class="title">
+⏰ کلاسز کے اوقات
+</h2>
+
+<div class="timings">
+
+<div class="time">
+<span>صبح</span>
+<span>08:00 تا 11:00</span>
+</div>
+
+<div class="time">
+<span>دوپہر</span>
+<span>02:00 تا 05:00</span>
+</div>
+
+<div class="time">
+<span>شام</span>
+<span>07:00 تا 10:00</span>
+</div>
+
+<p style="text-align:center;margin-top:15px;">
+طالب علم کی سہولت کے مطابق وقت طے کیا جا سکتا ہے۔
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ADMISSION -->
+
+<section id="admission">
+
+<h2 class="title">
+📝 داخلہ فارم
+</h2>
+
+<div class="form-box">
+
+<p style="text-align:center;">
+قرآنِ کریم سیکھنے کے لیے اپنی معلومات درج کریں۔
+</p>
+
+<form onsubmit="sendWhatsApp(); return false;">
+
+<label>آپ کا نام</label>
+
+<input id="name" type="text" placeholder="اپنا نام لکھیں" required>
+
+
+<label>عمر</label>
+
+<input id="age" type="number" placeholder="اپنی عمر لکھیں" required>
+
+
+<label>شہر</label>
+
+<input id="city" type="text" placeholder="اپنا شہر لکھیں" required>
+
+
+<label>کورس منتخب کریں</label>
+
+<select id="course">
+
+<option>ناظرہ قرآنِ کریم</option>
+
+<option>تجوید القرآن</option>
+
+<option>حفظِ قرآن</option>
+
+<option>نماز اور دعائیں</option>
+
+<option>بنیادی دینی تعلیم</option>
+
+</select>
+
+
+<label>اضافی معلومات</label>
+
+<textarea id="message" rows="4"
+placeholder="اگر کوئی سوال ہو تو یہاں لکھیں"></textarea>
+
+
+<button type="submit">
+📱 WhatsApp پر داخلہ بھیجیں
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<div class="contact">
+
+<h2>
+📞 ہم سے رابطہ کریں
+</h2>
+
+<p>
+قرآنِ کریم سیکھنے یا مزید معلومات کے لیے
+WhatsApp پر رابطہ کریں۔
+</p>
+
+<div class="number">
+03038479610
+</div>
+
+<a class="whatsapp"
+href="https://wa.me/923038479610"
+target="_blank">
+
+💬 WhatsApp پر رابطہ کریں
+
+</a>
+
+</div>
+
+</section>
+
+
+</div>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+سیدہ عائشہ صدیقہ رضی اللہ عنہا آن لائن قرآن اکیڈمی
+</p>
+
+<p>
+قرآن کی تعلیم، ہماری ذمہ داری
+</p>
+
+<p>
+© 2026 تمام حقوق محفوظ ہیں
+</p>
+
+</footer>
+
+
+<script>
+
+function sendWhatsApp(){
+
+    var name = document.getElementById("name").value;
+    var age = document.getElementById("age").value;
+    var city = document.getElementById("city").value;
+    var course = document.getElementById("course").value;
+    var message = document.getElementById("message").value;
+
+    var text =
+    "السلام علیکم!%0A%0A" +
+    "میں قرآنِ کریم سیکھنے کے لیے رابطہ کر رہا/رہی ہوں۔%0A%0A" +
+    "نام: " + name + "%0A" +
+    "عمر: " + age + "%0A" +
+    "شہر: " + city + "%0A" +
+    "کورس: " + course + "%0A" +
+    "پیغام: " + message;
+
+    window.open(
+        "https://wa.me/923038479610?text=" + text,
+        "_blank"
+    );
+
+}
+
+</script>
+
+
+</body>
+
+</html>
